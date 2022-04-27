@@ -1,0 +1,25 @@
+body {
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.footer {
+  background-color: #2f303a;
+}
+
+.hero {
+  background-color: #2f303a;
+  width: 1600;
+  height: 600;
+}
+
+.btn {
+  background-color: #2196f3;
+  color: #fff;
+  width: 200;
+  height: 50;
+}
