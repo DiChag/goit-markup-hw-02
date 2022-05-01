@@ -4,13 +4,11 @@
   --light-black-text: #212121;
   --color-focus: #2196f3;
   --white-text: #ffffff;
+  --secondary-white: rgba(255, 255, 255, 0.6);
+  --primary-backgrounds: #ffffff;
+  --secondary-backgrounds: #f5f4fa;
+  --footer: #2f303a;
 }
-
-/* вторичный-белый 
-color: rgba(255, 255, 255, 0.6); */
-
-/* основной-цвет-фона #FFFFFF */
-/* вторичный-цвет-фона #F5F4FA */
 
 body {
   font-family: Roboto, sans-serif;
@@ -29,10 +27,12 @@ ul {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
 .accent-logo {
   color: var(--color-focus);
 }
+
 .header-logo {
   color: var(--black-text);
 }
@@ -48,6 +48,7 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .site-nav a:hover,
 .site-nav a:focus {
@@ -59,6 +60,7 @@ ul {
 
 .contact-nav a {
   color: var(--color-text);
+  text-decoration: none;
 }
 .contact-nav a:hover,
 .contact-nav a:focus {
@@ -72,7 +74,8 @@ ul {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--secondary-white);
+  text-decoration: none;
 }
 .contact-footer:hover,
 .contact-footer:focus {
@@ -122,7 +125,7 @@ ul {
 }
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--secondary-backgrounds);
 }
 
 .name-team {
@@ -156,7 +159,11 @@ ul {
 /* Footer */
 
 .footer {
-  background-color: #2f303a;
+  background-color: var(--footer);
+}
+
+.footer .logo {
+  text-decoration: none;
 }
 
 .address {
@@ -168,6 +175,8 @@ ul {
   letter-spacing: 0.03em;
   color: var(--white-text);
 }
+
+/* BTN */
 
 .btn {
   width: 200px;
@@ -192,7 +201,7 @@ button {
 }
 
 .btn-filter button {
-  background: #f5f4fa;
+  background: var(--secondary-backgrounds);
   color: var(--black-text);
 }
 .btn-portfolio:hover {
