@@ -43,7 +43,6 @@ ul {
 /* site nav */
 .site-nav a {
   color: var(--light-black-text);
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -61,6 +60,7 @@ ul {
 .contact-nav a {
   color: var(--color-text);
   text-decoration: none;
+  font-weight: 500;
 }
 .contact-nav a:hover,
 .contact-nav a:focus {
@@ -68,9 +68,6 @@ ul {
 }
 
 .contact-footer {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -84,8 +81,6 @@ ul {
 
 .hero .title {
   background-color: #2f303a;
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -95,17 +90,16 @@ ul {
   color: var(--white-text);
 }
 
-.features title {
-  font-style: normal;
+.features-title {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--light-black-text);
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
 .what-are-we-doing .title {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -115,7 +109,6 @@ ul {
 }
 
 .team > h2 {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -129,7 +122,6 @@ ul {
 }
 
 .name-team {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -144,8 +136,6 @@ ul {
 }
 
 .name-project {
-  font-style: normal;
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -167,7 +157,6 @@ ul {
 }
 
 .address {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -179,13 +168,8 @@ ul {
 /* BTN */
 
 .btn {
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
   background: var(--color-focus);
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -203,6 +187,10 @@ button {
 .btn-filter button {
   background: var(--secondary-backgrounds);
   color: var(--black-text);
+  font-family: inherit;
+  line-height: 26;
+  letter-spacing: 3;
+  font-size: 16;
 }
 .btn-portfolio:hover {
   background: var(--color-focus);
