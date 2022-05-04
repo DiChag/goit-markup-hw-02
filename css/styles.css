@@ -9,30 +9,29 @@
   --secondary-backgrounds: #f5f4fa;
   --footer: #2f303a;
 }
-
 body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   color: var(--color-text);
 }
-
 ul {
   list-style: none;
 }
 
+/* LOGO */
+
 .logo {
   font-family: Raleway, cursive;
-  color: var(--black-text);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
+  color: var(--black-text);
 }
 .accent-logo {
   color: var(--color-focus);
 }
-
 .header-logo {
   color: var(--black-text);
 }
@@ -41,13 +40,14 @@ ul {
 }
 
 /* site nav */
+
 .site-nav a {
-  color: var(--light-black-text);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  color: var(--light-black-text);
 }
 .site-nav a:hover,
 .site-nav a:focus {
@@ -58,9 +58,9 @@ ul {
 }
 
 .contact-nav a {
-  color: var(--color-text);
   text-decoration: none;
   font-weight: 500;
+  color: var(--color-text);
 }
 .contact-nav a:hover,
 .contact-nav a:focus {
@@ -71,33 +71,44 @@ ul {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: var(--secondary-white);
   text-decoration: none;
+  color: var(--secondary-white);
 }
 .contact-footer:hover,
 .contact-footer:focus {
   color: var(--color-focus);
 }
 
+/* Hero */
+
 .hero .title {
-  background-color: #2f303a;
+  margin: 0 0 30px 0;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  background-color: #2f303a;
   color: var(--white-text);
 }
-
+.hero {
+  text-align: center;
+  background-color: #2f303a;
+}
+.features {
+  visibility: hidden;
+}
 .features-title {
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  color: var(--light-black-text);
   text-transform: uppercase;
   font-size: 14px;
+  color: var(--light-black-text);
 }
+
+/* What are we doing */
 
 .what-are-we-doing .title {
   font-weight: 700;
@@ -108,6 +119,27 @@ ul {
   color: var(--light-black-text);
 }
 
+/* Team */
+
+.container {
+  background-color: var(--secondary-backgrounds);
+}
+.container .title {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--light-black-text);
+}
+.ul-team {
+  margin: 0;
+}
 .team > h2 {
   font-weight: 700;
   font-size: 36px;
@@ -116,11 +148,9 @@ ul {
   letter-spacing: 0.03em;
   color: var(--light-black-text);
 }
-
 .team {
   background-color: var(--secondary-backgrounds);
 }
-
 .name-team {
   font-weight: 500;
   font-size: 16px;
@@ -128,12 +158,15 @@ ul {
   letter-spacing: 0.03em;
   color: var(--light-black-text);
 }
-
 .skill {
+  margin: 0;
+
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+
+/* Portfolio */
 
 .name-project {
   font-size: 18px;
@@ -146,51 +179,71 @@ ul {
   line-height: 1.87;
   letter-spacing: 0.03em;
 }
+
 /* Footer */
 
 .footer {
+  padding-top: 60px;
+
   background-color: var(--footer);
 }
-
 .footer .logo {
   text-decoration: none;
 }
-
 .address {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--white-text);
 }
+.logo {
+  padding: 60px 1240px 161px 215px;
+}
 
 /* BTN */
 
+button {
+  cursor: pointer;
+}
 .btn {
-  background: var(--color-focus);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  background: var(--color-focus);
   color: var(--white-text);
 }
-.hero .btn:hover {
+.hero .btn:hover,
+.hero .btn:focus {
   background: #188ce8;
 }
-
-button {
-  cursor: pointer;
+.btn-filter {
+  display: inline-block;
+  display: flex;
 }
+.btn-portfolio {
+  margin-right: 8px;
+}
+.btn-filter .btn-portfolio {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 6px 22px;
 
-.btn-filter button {
-  background: var(--secondary-backgrounds);
-  color: var(--black-text);
+  border: solid transparent;
+
+  cursor: pointer;
   font-family: inherit;
-  line-height: 26;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
   letter-spacing: 3;
   font-size: 16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background: var(--secondary-backgrounds);
+  color: var(--black-text);
 }
 .btn-portfolio:hover {
   background: var(--color-focus);
