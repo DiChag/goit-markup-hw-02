@@ -106,6 +106,9 @@ ul {
   background-color: #2f303a;
 }
 .features {
+  margin-bottom: 94px;
+}
+.features.h2 {
   visibility: hidden;
 }
 .li-ftrs {
@@ -125,10 +128,11 @@ ul {
 /* What are we doing */
 
 .what-are-we-doing {
+  background-color: teal;
   padding-bottom: 94px;
 }
 .what-are-we-doing .title {
-  padding: 50px;
+  padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -144,11 +148,11 @@ ul {
 /* Team */
 
 .container {
+  padding-bottom: 94px;
   background-color: var(--secondary-backgrounds);
 }
 .container .title {
   padding-top: 94px;
-  padding-bottom: 94px;
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -221,6 +225,9 @@ ul {
   letter-spacing: 0.03em;
   color: var(--white-text);
 }
+.ul-footer {
+  padding-bottom: 60px;
+}
 .logo {
   padding: 60px 1240px 161px 215px;
 }
@@ -246,6 +253,8 @@ button {
 .btn-filter {
   display: inline-block;
   display: flex;
+  margin-top: 94px;
+  margin-bottom: 50px;
 }
 .btn-portfolio {
   margin-right: 8px;
