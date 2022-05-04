@@ -17,8 +17,17 @@ body {
 ul {
   list-style: none;
 }
-
-/* LOGO */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0%;
+}
+/* LOGO Header*/
 
 .logo {
   font-family: Raleway, cursive;
@@ -99,6 +108,11 @@ ul {
 .features {
   visibility: hidden;
 }
+.li-ftrs {
+  width: 270px;
+  display: inline-block;
+  display: flexbox;
+}
 .features-title {
   font-weight: 700;
   line-height: 1.14;
@@ -110,13 +124,21 @@ ul {
 
 /* What are we doing */
 
+.what-are-we-doing {
+  padding-bottom: 94px;
+}
 .what-are-we-doing .title {
+  padding: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--light-black-text);
+}
+.img-list {
+  display: inline-block;
+  margin-right: 30px;
 }
 
 /* Team */
@@ -137,9 +159,6 @@ ul {
 
   color: var(--light-black-text);
 }
-.ul-team {
-  margin: 0;
-}
 .team > h2 {
   font-weight: 700;
   font-size: 36px;
@@ -150,6 +169,11 @@ ul {
 }
 .team {
   background-color: var(--secondary-backgrounds);
+}
+.li-team {
+  padding-right: 30px;
+  display: inline-block;
+  display: flexbox;
 }
 .name-team {
   font-weight: 500;
